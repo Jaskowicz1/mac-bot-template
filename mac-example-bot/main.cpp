@@ -1,6 +1,5 @@
 #include <iostream>
 #include <dpp/dpp.h>
-#include <dpp/json.h>
 
 /* Be sure to place your token in the line below.
  * Follow steps here to get a token:
