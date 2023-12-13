@@ -253,10 +253,19 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = "";
-				HEADER_SEARCH_PATHS = /opt/homebrew/include;
-				LIBRARY_SEARCH_PATHS = /opt/homebrew/lib;
+				HEADER_SEARCH_PATHS = (
+					/opt/homebrew/include,
+					/usr/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/opt/homebrew/lib,
+					/usr/local/lib,
+				);
 				OTHER_CFLAGS = "";
-				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-DDPP_CORO",
+				);
 				OTHER_LDFLAGS = "-ldpp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -272,10 +281,19 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = "";
-				HEADER_SEARCH_PATHS = /opt/homebrew/include;
-				LIBRARY_SEARCH_PATHS = /opt/homebrew/lib;
+				HEADER_SEARCH_PATHS = (
+					/opt/homebrew/include,
+					/usr/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/opt/homebrew/lib,
+					/usr/local/lib,
+				);
 				OTHER_CFLAGS = "";
-				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-DDPP_CORO",
+				);
 				OTHER_LDFLAGS = "-ldpp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
